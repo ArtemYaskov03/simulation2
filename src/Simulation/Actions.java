@@ -14,10 +14,12 @@ private int enterHeight(){
        if (h<10||h>100){
            System.out.println("Введите корректное число!");
            enterHeight();
+           return h;
        }else return h;
    }else {
        System.out.println("Введите корректное число!");
        enterHeight();
+
    }return 0;
 }
 
@@ -29,10 +31,12 @@ private int enterWidth(){
         if (w<10||w>100){
             System.out.println("Введите корректное число!");
             enterWidth();
+            return w;
         }else return w;
     }else {
         System.out.println("Введите корректное число!");
         enterWidth();
+
     }return 0;
 }
     WorldMap worldMap = new WorldMap(enterHeight(),enterWidth());
