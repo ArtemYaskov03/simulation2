@@ -19,7 +19,7 @@ private int enterHeight(){
    }else {
        System.out.println("Введите корректное число!");
        enterHeight();
-
+return 0;
    }return 0;
 }
 
